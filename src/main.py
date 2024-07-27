@@ -10,7 +10,7 @@ def create_market_selection_gui():
         if market == "Select a market":
             messagebox.showwarning("Selection Error", "Please select a valid market.")
         else:
-            file_path = f'./Data/{market}_Historical_Data.csv'
+            file_path = f'./data/historicaldata/{market}_Historical_Data.csv'
             try:
                 data = load_and_process_data(file_path)
                 root.destroy()
